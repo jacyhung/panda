@@ -93,9 +93,6 @@ static void cuatro_init(void) {
   set_gpio_output(GPIOA, 3, 1);
   set_gpio_mode(GPIOA, 3, MODE_OUTPUT);
 
-  // Initialize harness
-  harness_init();
-
   // init LEDs as open drain
   set_gpio_output_type(GPIOE, 2, OUTPUT_TYPE_OPEN_DRAIN);
   set_gpio_output_type(GPIOB, 2, OUTPUT_TYPE_OPEN_DRAIN);
