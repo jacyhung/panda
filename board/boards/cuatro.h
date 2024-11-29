@@ -104,9 +104,6 @@ static void cuatro_init(void) {
   red_set_led(LED_GREEN, false);
   red_set_led(LED_BLUE, false);
 
-  // Set normal CAN mode
-  tres_set_can_mode(CAN_MODE_NORMAL);
-
   // init LEDs as open drain
   set_gpio_output_type(GPIOE, 2, OUTPUT_TYPE_OPEN_DRAIN);
   set_gpio_output_type(GPIOB, 2, OUTPUT_TYPE_OPEN_DRAIN);
